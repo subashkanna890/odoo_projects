@@ -103,21 +103,21 @@
 #     payment.pay()
 
 
-class Bankaccount:
-    def __init__(self,owner,balance):
-        self.owner= owner
-        self.bankname="sbi"
-        self.__balance= balance
+# class Bankaccount:
+#     def __init__(self,owner,balance):
+#         self.owner= owner
+#         self.bankname="sbi"
+#         self.__balance= balance
 
-    def get_balance(self):
-        return self.__balance
-    def set_balance(self,new_balance):
-        self.__balance = new_balance
+#     def get_balance(self):
+#         return self.__balance
+#     def set_balance(self,new_balance):
+#         self.__balance = new_balance
 
-p1=Bankaccount("subash",100000)
+# p1=Bankaccount("subash",100000)
+# # print(p1.get_balance())
+# p1.set_balance(2000000)
 # print(p1.get_balance())
-p1.set_balance(2000000)
-print(p1.get_balance())
 
 
         
@@ -132,3 +132,26 @@ print(p1.get_balance())
 #     print(f"Balance : {account['balance']}")
 #     print("-" * 20)
 
+
+
+
+class employee:
+    def __init__(self,name,emp_id,salary):
+        self.name=name
+        self.emp_id=emp_id
+        self.salary=salary
+
+    def get_salary(self):
+        return self.__salary
+    
+    def set_salary(self, value):
+        if value < 0:
+            print(" ❌ Aiyo! Salary negative irukka mudiyathu ")
+        elif value > 500000
+            print(" ❌ Aiyo! Salary limit exceed aachu !")
+        else:
+            self._salary = value
+            print(f" ✅️ Salary updated: {self._salary}")
+
+emp=employee("subash","A101",15000)
+emp.display()
